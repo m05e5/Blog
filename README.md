@@ -1,24 +1,55 @@
-# README
+# Blog app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple blog app
 
-Things you may want to cover:
+## Built With
 
-* Ruby version
+- Ruby on rails
 
-* System dependencies
+## Getting Started
 
-* Configuration
+To get a local copy up and running follow these simple example steps.
 
-* Database creation
+### Prerequisites
 
-* Database initialization
+- [Ruby](https://www.ruby-lang.org/en/)
 
-* How to run the test suite
+### Setup
 
-* Services (job queues, cache servers, search engines, etc.)
+- Make sure you have Ruby IRB installed on your computer
+- Clone or download this repo on your machine
+- Enter project directory
 
-* Deployment instructions
+### Run
 
-* ...
+```rb
+irb main.rb
+```
+
+### Test
+
+```rb
+rspec
+```
+
+## Authors
+
+👤 **Sylvestre**
+
+- GitHub: [@sylvestre](https://github.com/pasytchangwa)
+- Twitter: [@Sylvestre](https://twitter.com/Sylvest10415595)
+- LinkedIn: [Sylvestre Tchangwa](https://www.linkedin.com/in/pagkeusylvestre/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Microverse
