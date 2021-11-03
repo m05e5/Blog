@@ -4,7 +4,8 @@ A simple blog app
 
 ## Built With
 
-- Ruby on rails
+- Ruby on Rails
+- PostgreSQL
 
 ## Getting Started
 
@@ -13,6 +14,7 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 - [Ruby](https://www.ruby-lang.org/en/)
+- [Rails](https://gorails.com/)
 
 ### Setup
 
@@ -20,17 +22,44 @@ To get a local copy up and running follow these simple example steps.
 - Clone or download this repo on your machine
 - Enter project directory
 
-### Run
+### Install
+
+bundle install
+
+### Database
 
 ```rb
-irb main.rb
+# Create user
+sudo -u postgres createuser blog -s
+
+# Create the database
+rake db:create
+
+# Load the schema
+rails db:schema:load
+
+# Seed
+rails db:seed
+
+## Apply migration (only if you generate a new migration file)
+rails db:migrate
 ```
+
+### Run
+
+rails server
 
 ### Test
 
 ```rb
 rspec
 ```
+
+### Troubleshoot
+
+### Rspec failing
+
+RAILS_ENV=test rake db:reset
 
 ## Authors
 

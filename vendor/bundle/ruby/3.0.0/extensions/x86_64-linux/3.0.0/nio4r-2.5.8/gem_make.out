@@ -1,5 +1,5 @@
 current directory: /home/carl/blog/vendor/bundle/ruby/3.0.0/gems/nio4r-2.5.8/ext/nio4r
-/home/carl/.rbenv/versions/3.0.2/bin/ruby -I /home/carl/.rbenv/versions/3.0.2/lib/ruby/3.0.0 -r ./siteconf20211102-24040-vby250.rb extconf.rb
+/home/carl/.rbenv/versions/3.0.2/bin/ruby -I /home/carl/.rbenv/versions/3.0.2/lib/ruby/3.0.0 -r ./siteconf20211103-29879-29t7y1.rb extconf.rb
 checking for unistd.h... yes
 checking for linux/aio_abi.h... yes
 checking for linux/io_uring.h... yes
@@ -106,4 +106,4 @@ linking shared-object nio4r_ext.so
 
 current directory: /home/carl/blog/vendor/bundle/ruby/3.0.0/gems/nio4r-2.5.8/ext/nio4r
 make DESTDIR\= install
-/usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20211102-24040-duztmq
+/usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20211103-29879-l07y1r
