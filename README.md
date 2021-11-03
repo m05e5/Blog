@@ -4,8 +4,8 @@ A simple blog app
 
 ## Built With
 
-- Ruby on rails
-- Postgresql
+- Ruby on Rails
+- PostgreSQL
 
 ## Getting Started
 
@@ -28,6 +28,7 @@ bundle install
 
 ### Database
 
+```rb
 # Create user
 sudo -u postgres createuser blog -s
 
@@ -42,6 +43,7 @@ rails db:seed
 
 ## Apply migration (only if you generate a new migration file)
 rails db:migrate
+```
 
 ### Run
 
