@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-Rspec.describe 'Posts', type: :request do
+RSpec.describe 'Posts', type: :request do
   describe 'GET #index' do
     before(:example) { get user_posts_path(1) }
 
@@ -33,5 +33,3 @@ Rspec.describe 'Posts', type: :request do
     end
   end
 end
-
-

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-Rspec.describe 'Users', type: :request do
+RSpec.describe 'Users', type: :request do
   describe 'GET #index' do
     before(:example) { get users_path }
 
