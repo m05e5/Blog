@@ -8,6 +8,6 @@ class Post < ApplicationRecord
   end
 
   def update_post_counter(value)
-    user.update('posts_counter', value)
+    user.increment!(:posts_counter, value)
   end
 end
