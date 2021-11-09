@@ -1,2 +1,11 @@
-<h1>Here is a given user bio and posts</h1>
+<%= render @user %>
+<% if @user.bio.present? %>
+  <div class="mt-5 notification">
+    <h5 class="title is-6">BIO</h5>
+    <p class="is-6"><%= @user.bio %></p>
+  </div>
+<% end %>
+<%= render partial: "posts/post", collection: @posts %>
+<%= link_to "See all post", user_path(@user.id), class: "button is-link is-small" %>
+
 
