@@ -10,5 +10,6 @@
   <p class="is-size-7 is-italic"><%= t('posted_on', date: @post.created_at.to_s(:cur_date)) %></p>
   <h1><%= @post.title %></h1>
   <p><%= @post.text %></p>
+  <%= render partial: "shared/comment", collection: @comments %>
 </section>
 
