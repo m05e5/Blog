@@ -10,3 +10,4 @@
     <%= t('comments_counter', count: post.comments_counter) %>, <%= t('likes_counter', count: post.likes_counter) %>
   </p>
 </section>
+<%= render partial: "shared/comment", collection: @comments %>

@@ -5,7 +5,7 @@
     <p class="is-6"><%= @user.bio %></p>
   </div>
 <% end %>
-<%= render partial: "posts/post", collection: @posts %>
+<%= render partial: "posts/post", collection: @posts.order(created_at: :desc).limit(3) %>
 <%= link_to "See all post", user_posts_path(@user.id), class: "button is-link is-small" %>
 
 
