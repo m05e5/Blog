@@ -14,9 +14,9 @@
  *= require_self
  */
 
- .article {
-   display: flex;
-   flex-direction: column;
-   gap: 16px;
- }
- 
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
