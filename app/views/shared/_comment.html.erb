@@ -1,4 +1,16 @@
-<article>
-  <p><%= comment.user.name %></p>
-  <p><%= comment.text%></p>
+<article class="media">
+  <figure class="media-left">
+    <p class="picture is-35x35">
+      <img class="is-rounded" src=<%= get_photo(comment.user) %> >
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="content">
+      <p>
+        <strong><%= comment.user.name %></strong> <small><%= t('time_ago', time: time_ago_in_words(comment.created_at)) %></small>
+        <br>
+        <%= comment.text %>
+      </p>
+    </div>
+  </div>
 </article>

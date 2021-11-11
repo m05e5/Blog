@@ -7,6 +7,10 @@ class Post < ApplicationRecord
     comments.order('created_at Desc').limit(5)
   end
 
+  def liked?(user_id)
+    likes.exists?(user_id: user_id)
+  end
+
   def update_post_counter
     user.increment!(:posts_counter)
   end

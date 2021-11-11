@@ -8,8 +8,16 @@
     </div>
   </div>
   <p class="is-size-7 is-italic"><%= t('posted_on', date: @post.created_at.to_s(:cur_date)) %></p>
-  <h1><%= @post.title %></h1>
+  <div class="post-title-container">
+    <h1 class="title"><%= @post.title %></h1>
+    <% if @liked %>
+      <%= render partial: "shared/not_like_post", post: @post %>
+    <% else %>
+      <%= render partial: "shared/like_post", post: @post %>
+    <% end %>
+  </div>
   <p><%= @post.text %></p>
-  <%= render partial: "shared/comment", collection: @comments %>
 </section>
+  <%= render partial: "shared/new_comment", post: @posts %>
+  <%= render partial: "shared/comment", collection: @comments %>
 
