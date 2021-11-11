@@ -11,11 +11,10 @@ class PostsController < ApplicationController
     @liked = @post.liked? current_user.id
   end
 
-  def new; end
-
+  
   def create
     post = current_user.posts.new(post_params)
-
+    
     respond_to do |format|
       format.html do
         if post.save
@@ -27,7 +26,9 @@ class PostsController < ApplicationController
       end
     end
   end
-
+  
+  def new; end
+  
   private
 
   def post_params
