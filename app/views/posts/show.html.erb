@@ -12,7 +12,7 @@
     <h1 class="title"><%= @post.title %></h1>
     <% if @liked %>
       <%= render partial: "shared/not_like_post", post: @post %>
-    <%= else %>
+    <% else %>
       <%= render partial: "shared/like_post", post: @post %>
     <% end %>
   </div>
