@@ -5,4 +5,18 @@
 .header {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+
+  @media screen and (min-width: 992px) {
+    flex-direction: row;
+  }
+}
+
+.post-title-container {
+  display: flex;
+  gap: 0.5rem;
+
+  .title {
+    flex-grow: 1;
+  }
 }
