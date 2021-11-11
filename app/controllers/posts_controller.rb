@@ -11,13 +11,17 @@ class PostsController < ApplicationController
     @liked = @post.liked? current_user.id
   end
 
+  def new
+    @post = Post.new
+  end
+
   def create
-    post = current_user.posts.new(post_params)
+    @post = current_user.posts.new(post_params)
 
     respond_to do |format|
       format.html do
-        if post.save
-          redirect_to user_post_path(post.user.id, post.id), notice: 'Post added successfully'
+        if @post.save
+          redirect_to user_post_path(@post.user.id, @post.id), notice: 'Post added successfully'
         else
           flash.now[:alert] = 'Post could not be added'
           render :new
@@ -25,8 +29,6 @@ class PostsController < ApplicationController
       end
     end
   end
-
-  def new; end
 
   private
 
