@@ -8,7 +8,7 @@ class LikesController < ApplicationController
         if like.save
           redirect_to user_post_path(post.user.id, post.id), notice: 'Liked!'
         else
-          redirect_to user_post_path(post.user.id, post.id), alert: 'Could not be liked'
+          redirect_to user_post_path(post.user.id, post.id), alert: 'Could not be liked!'
         end
       end
     end
