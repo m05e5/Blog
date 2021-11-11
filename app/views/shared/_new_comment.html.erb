@@ -1,0 +1,5 @@
+<%= form_with url: post_comments_path(@post.id), scope: :data, class: "mb-6" do |f| %>
+  <div class="field">
+    <% form.text_area :text, placeholder: "Please leave your comment", rows: 4, required: true, class: "textarea has-fixed-size" %>
+  </div>
+  <%= form.submit "Submit", class:button is-link" %>
